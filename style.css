@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #efefef;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  display: flex;
+  flex-flow: column;
+  background-color: #22252d;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.display {
+  font-size: 20px;
+  text-align: right;
+}
+.display .input {
+  font-size: 24px;
+}
+.display .output {
+  font-weight: 500;
+  font-size: 60px;
+}
+.keys {
+  display: grid;
+  gap: 10px;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.keys button {
+  border: none;
+  width: 80px;
+  height: 80px;
+  background-color: #272b33;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.keys button.operator {
+  font-size: 24px;
+}
+.keys button:hover {
+  background-color: #555;
+}
+.keys button.teal {
+  color: #26dfbe;
+}
+.keys button.maroon {
+  color: #f16868;
+}
